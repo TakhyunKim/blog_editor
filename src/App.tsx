@@ -1,7 +1,7 @@
-import React from "react";
+import MarkdownPreview from "./MarkdownPreview";
 
 function App() {
-  return <div>blog-editor</div>;
+  return <MarkdownPreview />;
 }
 
 export default App;
