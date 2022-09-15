@@ -2,19 +2,14 @@ import ReactMarkdown from "react-markdown";
 
 import styles from "./MdViewer.module.css";
 
-const mdExample = `This **word** is bold.
+interface MdViewerProps {
+  value: string;
+}
 
-![image alt text](image url)
-
-~~~js
-console.log('check value')
-~~~
-`;
-
-const MdViewer = () => {
+const MdViewer = ({ value }: MdViewerProps) => {
   return (
     <article className={styles.container}>
-      <ReactMarkdown>{mdExample}</ReactMarkdown>
+      <ReactMarkdown>{value}</ReactMarkdown>
     </article>
   );
 };
