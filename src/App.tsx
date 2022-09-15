@@ -1,7 +1,7 @@
-import MarkdownPreview from "./MarkdownPreview";
+import MdPreview from "./MdPreview";
 
 function App() {
-  return <MarkdownPreview />;
+  return <MdPreview />;
 }
 
 export default App;

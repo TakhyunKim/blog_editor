@@ -1,6 +1,6 @@
 import ReactMarkdown from "react-markdown";
 
-import styles from "./MarkdownViewer.module.css";
+import styles from "./MdViewer.module.css";
 
 const mdExample = `This **word** is bold.
 
@@ -11,7 +11,7 @@ console.log('check value')
 ~~~
 `;
 
-const MarkdownViewer = () => {
+const MdViewer = () => {
   return (
     <article className={styles.container}>
       <ReactMarkdown>{mdExample}</ReactMarkdown>
@@ -19,4 +19,4 @@ const MarkdownViewer = () => {
   );
 };
 
-export default MarkdownViewer;
+export default MdViewer;
