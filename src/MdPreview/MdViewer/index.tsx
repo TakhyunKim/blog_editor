@@ -1,4 +1,5 @@
 import ReactMarkdown from "react-markdown";
+import rehypeRaw from "rehype-raw";
 
 import styles from "./MdViewer.module.css";
 
@@ -9,7 +10,7 @@ interface MdViewerProps {
 const MdViewer = ({ value }: MdViewerProps) => {
   return (
     <article className={styles.container}>
-      <ReactMarkdown>{value}</ReactMarkdown>
+      <ReactMarkdown children={value} rehypePlugins={[rehypeRaw]} />
     </article>
   );
 };
