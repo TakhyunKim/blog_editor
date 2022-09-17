@@ -1,4 +1,7 @@
 import ReactMarkdown from "react-markdown";
+import rehypeRaw from "rehype-raw";
+
+import { SynataxHighlighter } from "./CustomSyntaxHighlighter";
 
 import styles from "./MdViewer.module.css";
 
@@ -8,9 +11,15 @@ interface MdViewerProps {
 
 const MdViewer = ({ value }: MdViewerProps) => {
   return (
-    <article className={styles.container}>
-      <ReactMarkdown>{value}</ReactMarkdown>
-    </article>
+    <div className={styles.container}>
+      <div className={styles.html_wrapper}>
+        <ReactMarkdown
+          children={value}
+          rehypePlugins={[rehypeRaw]}
+          components={SynataxHighlighter}
+        />
+      </div>
+    </div>
   );
 };
 

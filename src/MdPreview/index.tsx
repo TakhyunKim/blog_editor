@@ -14,10 +14,10 @@ const MdPreview = () => {
   };
 
   return (
-    <section className={styles.container}>
+    <div className={styles.container}>
       <MdEditor value={mdContents} onChangeTextArea={updateMdContents} />
       <MdViewer value={mdContents} />
-    </section>
+    </div>
   );
 };
 
