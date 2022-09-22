@@ -1,6 +1,7 @@
 # 🧑‍💻 Takhyun Kim 기술 블로그 에디터
 
-위 프로젝트는 개인 기술 블로그 포스팅 업로드를 위한 프로젝트입니다.
+위 프로젝트는 개인 기술 블로그 포스팅 업로드를 위한 프로젝트입니다.<br />
+[배포 환경](https://takhyun-blog-editor.vercel.app/)<br />
 [takhyun Kim 기술 블로그](https://takhyun.dev/)
 
 ### 🌈 기술 스택
